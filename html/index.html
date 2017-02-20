@@ -3,12 +3,41 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		body{background:#F5F5F5;text-align:center;}
-		#container{width:778px;height:2000px;margin:0 auto;background:#fff;text-align:left;}
+		body{
+			background:#F5F5F5;
+			text-align:center;
+			padding-top: 20px;
+		}
+		#container{
+			width:778px;
+			height:3000px;
+			margin:0 auto;
+			background:#fff;
+			text-align:left;
+			/*position: fixed;
+			top: 60px;
+			left: 50%;
+			margin-left: -389px;*/
+		}
+		#title{
+			/*position: fixed;
+ 			top: 0;
+  			left: 0;*/
+  			width: 100%;
+  			height: 60px;
+  		}
+  		#title a{
+  			font-size: 30px;
+  			color: #FF0000;
+  		}
 	</style>
 </head>
 <body>
+
 <!-- <embed src="../pdf/pinfo.pdf"/>  -->
+<div id="title">
+	<a href="https://github.com/xuechinahb/pinfo/blob/master/pdf/pinfo.pdf?raw=true">PDF Download</a>
+</div>
 <div id="container"></div>
 <script src="./pdfobject.js"></script>
 <script>PDFObject.embed("../pdf/pinfo.pdf", "#container");</script>
