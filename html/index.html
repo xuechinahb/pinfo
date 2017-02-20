@@ -4,11 +4,13 @@
 	<title></title>
 	<style type="text/css">
 		body{background:#F5F5F5;text-align:center;}
-		embed{width:778px;height:2000px;margin:0 auto;background:#fff;text-align:left;}
+		#container{width:778px;height:2000px;margin:0 auto;background:#fff;text-align:left;}
 	</style>
 </head>
 <body>
-<embed src="../pdf/pinfo.pdf"/> 
-
+<!-- <embed src="../pdf/pinfo.pdf"/>  -->
+<div id="container"></div>
+<script src="./pdfobject.js"></script>
+<script>PDFObject.embed("../pdf/pinfo.pdf", "#container");</script>
 </body>
 </html>
